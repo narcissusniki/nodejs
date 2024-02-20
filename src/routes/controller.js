@@ -1,10 +1,10 @@
-const autoBind = require("auto-bind");     // auto bind package  for solving standAlone function problem
+const autoBind = require("auto-bind");     // auto bind package  for  standAlone function 
 const {validationResult} = require('express-validator');
 const User = require('./../models/user');
 
 module.exports = class {
   constructor() {
-    autoBind(this);       // binding this for solving standAlone function problem
+    autoBind(this);       // binding this for  standAlone function 
     this.User = User;
   }
 
